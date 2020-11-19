@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+:root {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  --primary-color: #0284d0;
+  --secondary-color: #29437c;
+  --tertiary-color: #00bae6;
+  --dark-color: #333;
+  --gray-color: #444;
+  --light-color: #fcf5ef;
+  --success-color: #04e2c9;
+  --danger-color: #fa6352;
+  --warning-color: #fec43c;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.7em;
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  opacity: 0.7;
+  width: 100%;
+  height: 7rem;
+  position: fixed;
+  top: 0;
+  padding: 0 3rem;
+}
+
+.navbar a {
+  color: var(--light-color);
+  padding: 1rem 2rem;
+  margin: 0 0.5rem;
+}
+
+.navbar a:hover {
+  border-bottom: var(--primary-color) 0.2rem solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo {
+  font-weight: 400;
+}
+
+/* Header */
+.hero {
+  background: url('../assets/city_views_2560.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: var(--light-color);
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.hero .content h1 {
+  font-size: 5.5rem;
+}
+
+.hero .content p {
+  font-size: 2.3rem;
+  max-width: 60rem;
+  margin: 2rem 0 3rem;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero * {
+  z-index: 10;
+}

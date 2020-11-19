@@ -1,0 +1,56 @@
+/* Text styles */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-tertiary {
+  color: var(--tertiary-color);
+}
+
+.text-success {
+  color: var(--success-color);
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: var(--light-color);
+  background: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+  color: var(--light-color);
+}
+
+.btn-tertiary {
+  background: var(--tertiary-color);
+  color: var(--light-color);
+}
+
+.btn-dark {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+
+.btn-light {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
