@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a28be7c7ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <title>Corners Properties | Post</title>
+  </head>
+
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary">Corners</span>
+          Properties
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="post">
+        <h2>Blog Post One</h2>
+        <p class="meta">
+          <i class="fas fa-user"></i>Posted by <strong>John Doe</strong> | April
+          19, 2020
+        </p>
+        <img src="assets/work_force_real_estate_market.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+          assumenda magni, quis consequuntur reprehenderit nisi perferendis,
+          accusamus illo hic aperiam rerum, perspiciatis explicabo esse?
+          Repudiandae optio quod neque expedita debitis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+          laboriosam impedit facere, natus eos accusantium iste illo id tempora
+          totam atque perspiciatis. Ab asperiores atque maiores aliquam autem,
+          quia corrupti mollitia facilis, quibusdam voluptate temporibus
+          possimus ratione. Quos iure aut autem. Error officia inventore impedit
+          libero magnam veritatis modi? Voluptates earum ex, sapiente est veniam
+          dolorum hic tenetur fugit eaque!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A sapiente
+          minima iusto voluptatum sequi labore eaque nobis adipisci beatae
+          recusandae, quas molestiae repellat explicabo minus rerum magni nisi
+          harum. Nostrum aspernatur quibusdam, nihil tenetur numquam soluta enim
+          sapiente inventore similique odit accusamus recusandae iusto
+          doloremque quo illum minus. Atque, porro!
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-gray">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2015 - Corners Properties</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 250);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
